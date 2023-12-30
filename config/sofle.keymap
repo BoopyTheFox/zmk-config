@@ -47,7 +47,7 @@
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        f+nav+alt {
+        f-nav-alt {
             display-name = "raise";
 
             // ------------------------------------------------------------------------------------------------------------
@@ -58,14 +58,14 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&kp GRAVE   &kp F1      &kp F2     &kp F3      &kp F4       &kp F5                     &kp F6    &kp F7             &kp F8       &kp F9     &kp F10        &kp EQUAL
-&trans      &trans      &trans     &trans      &trans       &trans                     &kp HOME  &kp PAGE_DOWN      &kp PAGE_UP  &kp END    &kp F11        &kp RIGHT_BRACKET
-&caps_word  &trans      &trans     &trans      &trans       &trans                     &kp LEFT  &kp DOWN           &kp UP       &kp RIGHT  &kp F12        &trans
-&trans      &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp LS(INS)  &trans   &trans    &trans  &trans    &kp RIGHT_BRACKET  &trans       &trans     &kp BACKSLASH  &kp PIPE
-                        &trans     &trans      &trans       &kp DEL  &trans    &trans  &trans    &trans             &trans       &trans
+&kp GRAVE  &kp F1      &kp F2     &kp F3      &kp F4       &kp F5                            &kp F6    &kp F7             &kp F8       &kp F9     &kp F10        &kp EQUAL
+&trans     &trans      &trans     &trans      &trans       &kp GRAVE                         &kp HOME  &kp PAGE_DOWN      &kp PAGE_UP  &kp END    &kp F11        &kp RIGHT_BRACKET
+&trans     &trans      &trans     &trans      &trans       &trans                            &kp LEFT  &kp DOWN           &kp UP       &kp RIGHT  &kp F12        &trans
+&trans     &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp LS(INS)  &trans      &trans        &trans  &trans    &kp RIGHT_BRACKET  &trans       &trans     &kp BACKSLASH  &kp PIPE
+                       &trans     &trans      &trans       &kp K_UNDO  &kp K_REDO    &trans  &trans    &trans             &trans       &trans
             >;
 
-            label = "f+nav+alt";
+            label = "f-nav-alt";
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
         };
 
