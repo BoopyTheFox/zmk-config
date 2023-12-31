@@ -36,9 +36,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp RCTRL &kp Z>,
+                <&kp RCTRL>,
+                <&macro_tap>,
+                <&kp Z>,
                 <&macro_release>,
-                <&kp RCTRL &kp Z>;
+                <&kp RCTRL>;
 
             label = "CTRLZ";
         };
@@ -48,9 +50,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp RCTRL &kp Y>,
+                <&kp RCTRL>,
+                <&macro_tap>,
+                <&kp Y>,
                 <&macro_release>,
-                <&kp RCTRL &kp Y>;
+                <&kp RCTRL>;
 
             label = "CTRLY";
         };
