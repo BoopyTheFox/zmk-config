@@ -21,6 +21,15 @@
         compatible = "zmk,conditional-layers";
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        kb_settings {
+            bindings = <&mo 5>;
+            key-positions = <56 57 58 59>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
