@@ -34,7 +34,11 @@
         CtrlZ: CtrlZ {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp RCTRL &kp Z>, <&macro_release>;
+            bindings =
+                <&macro_press>,
+                <&kp RCTRL &kp Z>,
+                <&macro_release>,
+                <&kp RCTRL &kp Z>;
 
             label = "CTRLZ";
         };
@@ -42,7 +46,11 @@
         CtrlY: CtrlY {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp RCTRL &kp Y>, <&macro_release>;
+            bindings =
+                <&macro_press>,
+                <&kp RCTRL &kp Y>,
+                <&macro_release>,
+                <&kp RCTRL &kp Y>;
 
             label = "CTRLY";
         };
