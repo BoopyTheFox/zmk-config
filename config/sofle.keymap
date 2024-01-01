@@ -24,9 +24,14 @@
     combos {
         compatible = "zmk,combos";
 
-        kb_settings {
+        KeyboardSettingsLayer {
             bindings = <&mo 5>;
             key-positions = <56 57 58 59>;
+        };
+
+        ChangeKeymap {
+            bindings = <&WinSpace>;
+            key-positions = <36 54>;
         };
     };
 
@@ -36,11 +41,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp RCTRL>,
+                <&kp LEFT_CONTROL>,
                 <&macro_tap>,
                 <&kp Z>,
                 <&macro_release>,
-                <&kp RCTRL>;
+                <&kp LEFT_CONTROL>;
 
             label = "CTRLZ";
         };
@@ -50,13 +55,27 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp RCTRL>,
+                <&kp LEFT_CONTROL>,
                 <&macro_tap>,
                 <&kp Y>,
                 <&macro_release>,
-                <&kp RCTRL>;
+                <&kp LEFT_CONTROL>;
 
             label = "CTRLY";
+        };
+
+        WinSpace: WinSpace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp SPACE>,
+                <&macro_release>,
+                <&kp LEFT_WIN>;
+
+            label = "WINSPACE";
         };
     };
 
