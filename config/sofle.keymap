@@ -103,7 +103,7 @@
 &trans     &trans      &trans     &trans      &trans       &kp GRAVE                    &kp HOME  &kp PAGE_DOWN      &kp PAGE_UP  &kp END    &kp F11        &kp RIGHT_BRACKET
 &trans     &trans      &trans     &trans      &trans       &trans                       &kp LEFT  &kp DOWN           &kp UP       &kp RIGHT  &kp F12        &trans
 &trans     &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp LS(INS)  &trans     &trans    &trans  &trans    &kp RIGHT_BRACKET  &trans       &trans     &kp BACKSLASH  &kp PIPE
-                       &trans     &trans      &trans       &CtrlZ     &CtrlY    &trans  &trans    &trans             &trans       &trans
+                       &trans     &trans      &trans       &kp DEL    &trans    &trans  &trans    &trans             &trans       &trans
             >;
 
             label = "f-nav-alt";
@@ -116,7 +116,7 @@
 &kp LS(EXCL)   &kp LS(LBRC)   &kp SQT       &kp LS(DQT)    &kp LS(RBRC)  &kp LS(QMARK)                    &trans         &kp LS(STAR)  &kp LS(POUND)  &kp LBKT      &kp RBKT       &kp SEMI
 &kp LS(POUND)  &kp LS(CARET)  &kp EQUAL     &kp LS(UNDER)  &kp LS(DLLR)  &kp LS(STAR)                     &kp LS(PRCNT)  &kp LS(AMPS)  &kp LS(AT)     &kp LS(LBRC)  &kp LS(RBRC)   &kp SQT
 &kp LS(TILDE)  &kp LS(LT)     &kp LS(PIPE)  &kp MINUS      &kp LS(GT)    &kp FSLH       &trans    &trans  &kp LS(CARET)  &kp LS(DLLR)  &kp LS(LT)     &kp LS(GT)    &kp BACKSLASH  &kp LS(PIPE)
-                              &trans        &trans         &trans        &trans         &trans    &trans  &trans         &trans        &trans         &trans
+                              &trans        &trans         &trans        &CtrlZ         &CtrlY    &trans  &trans         &trans        &trans         &trans
             >;
 
             label = "code";
