@@ -33,6 +33,11 @@
             bindings = <&WinSpace>;
             key-positions = <36 54>;
         };
+
+        Escape-one-handed {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
+        };
     };
 
     macros {
@@ -93,7 +98,7 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp ESC     &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                   &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
+&kp GRAVE   &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                   &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
 &kp TAB     &kp Q   &kp W   &kp E     &kp R     &kp T                                    &kp Y   &kp U   &kp I      &kp O    &kp P     &kp LEFT_BRACKET
 &kp LSHIFT  &kp A   &kp S   &kp D     &kp F     &kp G                                    &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LCTRL   &kp Z   &kp X   &kp C     &kp V     &kp B          &kp LC(N0)    &kp C_MUTE  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSLASH
@@ -118,11 +123,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&kp GRAVE  &kp F1      &kp F2     &kp F3      &kp F4       &kp F5                       &kp F6    &kp F7             &kp F8       &kp F9     &kp F10        &kp EQUAL
-&trans     &trans      &trans     &trans      &trans       &kp GRAVE                    &kp HOME  &kp PAGE_DOWN      &kp PAGE_UP  &kp END    &kp F11        &kp RIGHT_BRACKET
-&trans     &trans      &trans     &trans      &trans       &trans                       &kp LEFT  &kp DOWN           &kp UP       &kp RIGHT  &kp F12        &trans
-&trans     &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp LS(INS)  &trans     &trans    &trans  &trans    &kp RIGHT_BRACKET  &trans       &trans     &kp BACKSLASH  &kp PIPE
-                       &trans     &trans      &trans       &kp DEL    &trans    &trans  &trans    &trans             &trans       &trans
+&kp ESC  &kp F1      &kp F2     &kp F3      &kp F4       &kp F5                       &kp F6    &kp F7             &kp F8       &kp F9     &kp F10        &kp EQUAL
+&trans   &trans      &trans     &trans      &trans       &kp GRAVE                    &kp HOME  &kp PAGE_DOWN      &kp PAGE_UP  &kp END    &kp F11        &kp RIGHT_BRACKET
+&trans   &trans      &trans     &trans      &trans       &trans                       &kp LEFT  &kp DOWN           &kp UP       &kp RIGHT  &kp F12        &trans
+&trans   &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp LS(INS)  &trans     &trans    &trans  &trans    &kp RIGHT_BRACKET  &trans       &trans     &kp BACKSLASH  &kp PIPE
+                     &trans     &trans      &trans       &kp DEL    &trans    &trans  &trans    &trans             &trans       &trans
             >;
 
             label = "f-nav-alt";
