@@ -38,6 +38,11 @@
             bindings = <&kp ESC>;
             key-positions = <0 1>;
         };
+
+        TravelMode {
+            bindings = <&tog 6>;
+            key-positions = <0 50 59 11>;
+        };
     };
 
     macros {
@@ -188,6 +193,18 @@
             >;
 
             label = "kb_func";
+        };
+
+        travel {
+            bindings = <
+&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+              &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+            >;
+
+            label = "travel";
         };
     };
 };
